@@ -2,19 +2,20 @@
   font-family: 'beat';
   src: url("../font/beat.ttf"); }
 header {
-  font-family: 'beat', 'Georgia', serif; }
+  font-family: 'beat', 'Georgia', serif;
+  font-size: 8vw;
+  color: #4ef4cf; }
   header a:link {
     outline-style: none; }
   header a {
     text-decoration: none;
-    color: #4ef4cf;
-    font-size: 8vw; }
+    color: #4ef4cf; }
   header .navigation-closed {
     z-index: 100;
     position: fixed;
     top: 50px;
     left: 60px; }
-    header .navigation-closed img {
+    header .navigation-closed #nav-button-image {
       width: 50px; }
   header .navigation-open {
     z-index: 100;
@@ -24,7 +25,7 @@ header {
     background-color: rgba(154, 101, 101, 0.95);
     padding-top: 50px;
     padding-left: 60px; }
-    header .navigation-open img {
+    header .navigation-open #nav-button-image {
       width: 50px; }
   header #nav-button .close {
     background-image: url("../img/navigation.png");
@@ -39,7 +40,9 @@ header {
     background-size: cover; }
   header .links {
     display: block;
-    margin-top: 50px; }
+    margin-top: -8vh; }
+    header .links .hover-links a:hover {
+      text-decoration: line-through; }
   header .links-closed {
     display: none; }
   header li {

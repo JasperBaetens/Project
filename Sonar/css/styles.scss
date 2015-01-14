@@ -6,10 +6,11 @@
 header {
   a:link{ outline-style: none; }
   font-family: 'beat', 'Georgia', serif;
+  font-size: 8vw;
+  color: #4ef4cf;
   a{
     text-decoration: none;
     color: #4ef4cf;
-    font-size: 8vw;
   }
 
   .navigation-closed {
@@ -17,7 +18,7 @@ header {
     position: fixed;
     top: 50px;
     left: 60px;
-    img {
+    #nav-button-image {
       width: 50px;
     }
   }
@@ -30,7 +31,7 @@ header {
     background-color: rgba(154, 101, 101, 0.95);
     padding-top: 50px;
     padding-left: 60px;
-    img {
+    #nav-button-image {
       width: 50px;
     }
   }
@@ -54,7 +55,13 @@ header {
   }
   .links {
     display: block;
-    margin-top: 50px;
+    margin-top: -8vh;
+    .hover-links {
+      a:hover {
+        text-decoration: line-through;
+
+      }
+    }
   }
   .links-closed {
     display: none;
@@ -62,6 +69,7 @@ header {
   li{
     list-style-type: none;
   }
+
 }
 
   #slide-1 {
