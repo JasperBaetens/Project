@@ -10,10 +10,24 @@
 
 
 <main>
+    <header>
+    <div class="navigation-closed" id="navigation">
+        <a href=""  id="nav-button">
+            <div class="close" id="nav-button-image"></div>
+            <!--<img src="img/navigation.png" alt="navigation">-->
+        </a>
 
-    <div class="navigation">
-        <img src="img/navigation.png" alt="navigation">
+        <div class="links-closed" id="navigation-links">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="#slide-2">About</a></li>
+                <li><a href="">Make a Sonario</a></li>
+                <li><a href="">Share your ideas</a></li>
+            </ul>
+
+        </div>
     </div>
+    </header>
 
     <section id="slide-1"
                  data--0-top="
@@ -28,8 +42,8 @@
                     opacity:1;
                     margin-top: 0px;"
                  data--800-top="
-                    opacity:0;
-                    margin-top: -100px;">
+                    opacity:0.2;
+                    margin-top: -50px;">
 
             <img src="img/LOGO.png" alt="Sonario" class="logo">
             <div class="sticker">
@@ -54,6 +68,7 @@
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
 <script src="js/skrollr.js"></script>
 <script src="js/main.js"></script>
+
 
 <script type="text/javascript">
     var s = skrollr.init();
