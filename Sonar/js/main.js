@@ -1,7 +1,7 @@
 var lastWidth = $(window).width();
 
 //smooth scroll to slide 2
-$('#arrow-1').click(function(){
+$('#arrow-1,#sticker').click(function(){
     $('html, body').animate({
         scrollTop: $( $(this).attr('href') ).offset().top
     }, 500);

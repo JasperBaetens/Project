@@ -90,15 +90,19 @@ header {
       }
 
       .sticker {
-        margin-top: 100px;
-        margin-left: 45vw;
+        position: fixed;
+        bottom: 90px;
+        //margin-top: 8vh;
+        margin-left: 46vw;
         img {
-          width: 10vw;
+          width: 8vw;
         }
       }
 
       .arrow {
         margin-left: 48vw;
+        position: fixed;
+        bottom: 10px;
       }
       img {
         width: 4vw;
@@ -121,4 +125,30 @@ header {
 
   @media screen and (max-width : 480px){}
 
-  @media screen and (max-width : 768px){}
+
+@media screen and (max-width : 1140px){
+  .logo{
+    width: 36vw !important;
+    margin-left: 32vw !important;
+  }
+  .sticker {
+    margin-left: 42vw !important;
+    img {
+      width: 16vw !important;
+    }
+  }
+  .arrow {
+    margin-left: 46vw !important;
+    img {
+      width: 8vw !important;
+    }
+  }
+}
+@media screen and (max-height : 600px){
+  .sticker {
+    display: none;
+  }
+  .arrow {
+    display: none;
+  }
+}
