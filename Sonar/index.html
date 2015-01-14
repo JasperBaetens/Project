@@ -8,12 +8,44 @@
 <body>
 
 
+
 <main>
 
-    <section id="slide-1">
-        <div>
+    <div class="navigation">
+        <img src="img/navigation.png" alt="navigation">
+    </div>
+
+    <section id="slide-1"
+                 data--0-top="
+                      opacity: 1;"
+                 data--800-top="
+                      opacity: 0.6;">
+
+        <div class="bg">
+
+        <div class="components"
+                 data--0-top="
+                    opacity:1;
+                    margin-top: 0px;"
+                 data--800-top="
+                    opacity:0;
+                    margin-top: -100px;">
+
             <img src="img/LOGO.png" alt="Sonario" class="logo">
+            <div class="sticker">
+                <img src="img/sticker.png" alt="sticker">
+            </div>
+            <div class="arrow">
+                <a href="#slide-2"  id="arrow-1">
+                    <img src="img/arrow.png" alt="arrow">
+                </a>
+            </div>
         </div>
+            </div>
+    </section>
+
+    <section id="slide-2">
+
     </section>
 
 </main>
@@ -21,6 +53,7 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
 <script src="js/skrollr.js"></script>
+<script src="js/main.js"></script>
 
 <script type="text/javascript">
     var s = skrollr.init();

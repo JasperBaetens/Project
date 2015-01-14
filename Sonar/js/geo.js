@@ -1,13 +1,20 @@
-navigator.geolocation.watchPosition(
-        positionSucces,
-        positionError,
-        {
-            enableHighAccuracy:true,
-            maximumAge:30000,
-            timeout:10000
-        }
-    );
 
+var c = 0;
+var t;
+var timer_is_on = 0;
+var doTimer = document.getElementById("doTimer");
+var stopCount = document.getElementById("stopCount");
+var vid = document.getElementById("myAudio");
+
+navigator.geolocation.watchPosition(
+    positionSucces,
+    positionError,
+    {
+        enableHighAccuracy:true,
+        maximumAge:30000,
+        timeout:10000
+    }
+);
 
 function distance(lon1, lat1, lon2, lat2) {
     var R = 6371; // Radius of the earth in km
@@ -28,50 +35,21 @@ if (typeof(Number.prototype.toRad) === "undefined") {
     }
 }
 
-function interval(func, wait, times){
-    var interv = function(w, t){
-        return function(){
-            if(typeof t === "undefined" || t-- > 0){
-                setTimeout(interv, w);
-                try{
-                    func.call(null);
-                }
-                catch(e){
-                    t = 0;
-                    throw e.toString();
-                }
-            }
-        };
-    }(wait, times);
-
-    setTimeout(interv, wait);
-};
-
 function positionSucces(position) {
     var longitude = position.coords.longitude;
     var latitude = position.coords.latitude;
-    var hideDistance = distance(longitude, latitude, 4.388853699999999, 51.0925936)
+    var hideDistance = distance(longitude, latitude, 4.3788348, 51.0925936)
     console.log(hideDistance);
 
-    var vid = document.getElementById("myAudio");
     var width = 0.1;
+    currentInterval = 1000+(hideDistance/width)*1000;
 
-    (function playSound() {
-
-        currentInterval = (hideDistance/width)*1000;
-        vid.play();
-        setTimeout(playSound, currentInterval)
-
-    })();
 
     document.getElementById("lat").innerHTML = latitude;
     document.getElementById("long").innerHTML = longitude;
     document.getElementById("distance").innerHTML = hideDistance;
-    document.getElementById("speed").innerHTML = currentInterval;
-    var refresh = document.getElementById("refresh");
-    refresh.onclick=function(){
-        location.reload();
-    }
+    //document.getElementById("speed").innerHTML = currentInterval;
+
 }
 
 function positionError(position){
@@ -79,10 +57,26 @@ function positionError(position){
 }
 
 
+function timedCount() {
+    document.getElementById('txt').value = c;
+    c = c + 1;
+    console.log('test');
 
+    vid.play();
 
+    t = setTimeout("timedCount()", currentInterval);
 
+}
 
+document.getElementById("doTimer").onclick = function () {
+    console.log('check');
+    if (!timer_is_on) {
+        timer_is_on = 1;
+        timedCount();
+    }
+}
 
-
-
+stopCount.onclick = function () {
+    clearTimeout(t);
+    timer_is_on = 0;
+}
