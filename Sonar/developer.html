@@ -1,0 +1,27 @@
+<html>
+<head>
+<link rel="icon" type="image/png" href="img/favicon.png" />
+</head>
+
+<body>
+    <img src="img/LOGO.png" alt="Sonario">
+<form>
+    <input type="button" value="Start count!" id="doTimer">
+    <input type="text" id="txt">
+    <input type="button" value="Stop count!" id="stopCount">
+
+    <audio id="myAudio" controls>
+        <!-- <source src="Abstract.ogg" type="audio/ogg"> -->
+        <source src="beep.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+</form>
+
+<div id="lat"></div>
+<div id="long"></div>
+<div id="distance"></div>
+<div id="speed"></div>
+
+<script src="js/geo.js"></script>
+</body>
+</html>

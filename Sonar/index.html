@@ -1,27 +1,29 @@
 <html>
 <head>
-<link rel="icon" type="image/png" href="img/favicon.png" />
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    <img src="img/LOGO.png" alt="Sonario">
-<form>
-    <input type="button" value="Start count!" id="doTimer">
-    <input type="text" id="txt">
-    <input type="button" value="Stop count!" id="stopCount">
 
-    <audio id="myAudio" controls>
-        <!-- <source src="Abstract.ogg" type="audio/ogg"> -->
-        <source src="beep.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
-</form>
 
-<div id="lat"></div>
-<div id="long"></div>
-<div id="distance"></div>
-<div id="speed"></div>
+<main>
 
-<script src="js/main.js"></script>
+    <section id="slide-1">
+        <div>
+            <img src="img/LOGO.png" alt="Sonario" class="logo">
+        </div>
+    </section>
+
+</main>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="js/skrollr.js"></script>
+
+<script type="text/javascript">
+    var s = skrollr.init();
+</script>
 </body>
 </html>
