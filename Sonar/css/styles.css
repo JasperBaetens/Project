@@ -3,6 +3,8 @@
   src: url("../font/beat.ttf"); }
 header {
   font-family: 'beat', 'Georgia', serif; }
+  header a:link {
+    outline-style: none; }
   header a {
     text-decoration: none;
     color: #4ef4cf;

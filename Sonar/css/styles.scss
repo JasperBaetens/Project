@@ -4,6 +4,7 @@
 }
 
 header {
+  a:link{ outline-style: none; }
   font-family: 'beat', 'Georgia', serif;
   a{
     text-decoration: none;
@@ -35,6 +36,7 @@ header {
   }
 
   #nav-button {
+
     .close {
       background-image: url("../img/navigation.png");
       height: 35px;
@@ -42,6 +44,7 @@ header {
       background-size: cover;
     }
     .open {
+
       background-image: url("../img/cross.png");
       height: 50px;
       width: 50px;
