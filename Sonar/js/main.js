@@ -1,3 +1,4 @@
+var lastWidth = $(window).width();
 
 //smooth scroll to slide 2
 $('#arrow-1').click(function(){
@@ -41,3 +42,12 @@ $('#nav-button').click( function(event){
 });
 
 
+$(window).resize(function(){
+    if($(window).width()!=lastWidth){
+        if( $(window).width() > 480)
+        {
+            window.location.href = "http://localhost/project/Sonar/";
+        }
+        lastWidth = $(window).width();
+    }
+});
