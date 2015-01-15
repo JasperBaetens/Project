@@ -2,6 +2,14 @@
   font-family: 'beat';
   src: url('../font/beat.ttf');
 }
+@font-face {
+  font-family: 'cour';
+  src: url('../font/cour.ttf');
+}
+@font-face {
+  font-family: 'courb';
+  src: url('../font/courbd.ttf');
+}
 
 header {
   a:link{ outline-style: none; }
@@ -73,14 +81,16 @@ header {
 }
 
   #slide-1 {
-    background-position: center center;
-    background-image: url("../img/home.png");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    height: 100vh;
-    width: 100%;
-    z-index: 1;
+    .bg {
+      background-position: center center;
+      background-image: url("../img/home.png");
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      height: 100vh;
+      width: 100%;
+      z-index: 1;
+    }
     .components {
       position: fixed;
       .logo {
@@ -117,10 +127,40 @@ header {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    height: 100vh;
+    height: 105vh;
     width: 100%;
     z-index: 2;
   }
+
+#slide-3 {
+  color: #f26d7d;
+  font-family: 'courb';
+  font-size: 34px;
+    position: relative;
+    background-position: center center;
+    background-image: url("../img/bg3.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+  .container{
+    padding-left: 20vw;
+    padding-right: 20vw;
+    padding-top: 15vh;
+    text-align: center;
+
+    #scenario-sticker{
+      margin-top: 18vh;
+    }
+    .text-small{
+      font-size: 22px;
+    }
+  }
+  }
+
+
 
 
   @media screen and (max-width : 480px){}

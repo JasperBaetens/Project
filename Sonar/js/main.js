@@ -19,7 +19,7 @@ function toggleNavigation() {
     $('#navigation-links').toggleClass("links-closed").toggleClass("links");
 }
 
-$('#about').click(function(){
+$('#about,#home,#sonario,#ideas').click(function(){
     $('html, body').animate({
         scrollTop: $( $(this).attr('href') ).offset().top
     }, 500);
@@ -27,13 +27,8 @@ $('#about').click(function(){
     return false;
 });
 
-$('#home').click(function(){
-    $('html, body').animate({
-        scrollTop: $( $(this).attr('href') ).offset().top
-    }, 500);
-    toggleNavigation();
-    return false;
-});
+
+
 
 //open or close navigation
 $('#nav-button').click( function(event){

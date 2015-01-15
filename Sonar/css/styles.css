@@ -1,6 +1,12 @@
 @font-face {
   font-family: 'beat';
   src: url("../font/beat.ttf"); }
+@font-face {
+  font-family: 'cour';
+  src: url("../font/cour.ttf"); }
+@font-face {
+  font-family: 'courb';
+  src: url("../font/courbd.ttf"); }
 header {
   font-family: 'beat', 'Georgia', serif;
   font-size: 8vw;
@@ -48,7 +54,7 @@ header {
   header li {
     list-style-type: none; }
 
-#slide-1 {
+#slide-1 .bg {
   background-position: center center;
   background-image: url("../img/home.png");
   background-repeat: no-repeat;
@@ -57,24 +63,24 @@ header {
   height: 100vh;
   width: 100%;
   z-index: 1; }
-  #slide-1 .components {
-    position: fixed; }
-    #slide-1 .components .logo {
-      width: 24vw;
-      margin-left: 38vw;
-      margin-top: 33vh; }
-    #slide-1 .components .sticker {
-      position: fixed;
-      bottom: 90px;
-      margin-left: 46vw; }
-      #slide-1 .components .sticker img {
-        width: 8vw; }
-    #slide-1 .components .arrow {
-      margin-left: 48vw;
-      position: fixed;
-      bottom: 10px; }
-    #slide-1 .components img {
-      width: 4vw; }
+#slide-1 .components {
+  position: fixed; }
+  #slide-1 .components .logo {
+    width: 24vw;
+    margin-left: 38vw;
+    margin-top: 33vh; }
+  #slide-1 .components .sticker {
+    position: fixed;
+    bottom: 90px;
+    margin-left: 46vw; }
+    #slide-1 .components .sticker img {
+      width: 8vw; }
+  #slide-1 .components .arrow {
+    margin-left: 48vw;
+    position: fixed;
+    bottom: 10px; }
+  #slide-1 .components img {
+    width: 4vw; }
 
 #slide-2 {
   position: relative;
@@ -83,9 +89,32 @@ header {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  height: 100vh;
+  height: 105vh;
   width: 100%;
   z-index: 2; }
+
+#slide-3 {
+  color: #f26d7d;
+  font-family: 'courb';
+  font-size: 34px;
+  position: relative;
+  background-position: center center;
+  background-image: url("../img/bg3.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  z-index: 1; }
+  #slide-3 .container {
+    padding-left: 20vw;
+    padding-right: 20vw;
+    padding-top: 15vh;
+    text-align: center; }
+    #slide-3 .container #scenario-sticker {
+      margin-top: 18vh; }
+    #slide-3 .container .text-small {
+      font-size: 22px; }
 
 @media screen and (max-width: 1140px) {
   .logo {
