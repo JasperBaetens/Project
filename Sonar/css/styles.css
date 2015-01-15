@@ -127,6 +127,10 @@ header {
       margin-top: 18vh; }
     #slide-3 .container .text-small {
       font-size: 22px; }
+  #slide-3 #sonario-btn {
+    background: none;
+    border: 0;
+    color: red; }
 
 @media screen and (max-width: 1140px) {
   .logo {
