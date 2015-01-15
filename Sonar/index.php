@@ -66,18 +66,21 @@
 
     <section id="slide-3">
         <div class="container">
-            <form autocomplete="off">
-                <p>I&rsquo;d like to name my sonario 	<input type="text" maxlength="45" name="name" id="sonario" placeholder="............" /></p>
-                <p>It&rsquo;s longitude* is <input type="text" name="name" id="longitude" placeholder="............" />
-                <p>and latitude* is <input type="text" name="name" maxlength="20" id="latitude" placeholder="............" /></p>
-                <p>The range from the sonario is <input type="text" maxlength="20" name="name" id="distance" placeholder="........." /> meters.</p>
+            <form autocomplete="off" action="confirmation.php" method="POST">
+                <p>I&rsquo;d like to name my sonario <input type="text" name="name" placeholder="............" /></p>
+                <p>It&rsquo;s latitude* is <input type="text" name="lat" placeholder="............" /></p>
+                <p>and longitude* is <input type="text" name="long" placeholder="............" /> </p>
+                <p>The range from the sonario is <input type="text" name="range" placeholder="............" /> meters.</p>
 
-
-                <button type="submit" name="foo" value="bar" id="sonario-btn">
+                <button type="submit" name="foo" id="sonario-btn">
                     <img src="img/sticker-create.png" width="200px;" id="scenario-sticker">
                 </button>
 
             </form>
+            
+            
+            
+            
             <p class="text-small">*Find position <a href="http://www.latlong.net/" target="_blank">here</a></p>
 
         </div>
@@ -108,27 +111,27 @@
 </body>
 </html>
 
-
 <?php
 
-$db = new PDO('mysql:host=localhost;dbname=dbsonario;charset=utf8', 'root', '');
 
-/*$statement = $db->prepare("SELECT lat FROM Sonario WHERE name='myplace' LIMIT 1");
-$statement->execute();
-$row = $statement->fetch(); */
+            $db = new PDO('mysql:host=localhost;dbname=dbsonario;charset=utf8', 'root', '');
 
-//echo $row['lat'];
+            /*$statement = $db->prepare("SELECT lat FROM Sonario WHERE name='myplace' LIMIT 1");
+            $statement->execute();
+            $row = $statement->fetch(); */
 
-//var_dump($_POST);
-if(isset($_REQUEST['foo']))
-{
-    $insert = $db->prepare("INSERT INTO Sonario(name, longit, lat, radius) VALUES(:fname, :flongit, :flat, :frad)");
-    $insert->execute(array(
-        "fname" => $_POST["name"],
-        "flongit" => $_POST["long"],
-        "flat" => $_POST["lat"],
-        "frad" => $_POST["range"],
-    ));
-}
+            //echo $row['lat'];
 
-?>
+            //var_dump($_POST);
+            if(isset($_REQUEST['foo']))
+            {
+                $insert = $db->prepare("INSERT INTO sonario(name, longit, lat, radius) VALUES(:fname, :flongit, :flat, :frad)");
+                $insert->execute(array(
+                    "fname" => $_POST["name"],
+                    "flongit" => $_POST["longit"],
+                    "flat" => $_POST["lat"],
+                    "frad" => $_POST["range"],
+                ));
+            }
+
+            ?>
