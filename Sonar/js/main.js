@@ -36,6 +36,7 @@ $('#nav-button').click( function(event){
     toggleNavigation();
 });
 
+/*
 
 $(window).resize(function(){
     if($(window).width()!=lastWidth){
@@ -45,4 +46,4 @@ $(window).resize(function(){
         }
         lastWidth = $(window).width();
     }
-});
+});*/

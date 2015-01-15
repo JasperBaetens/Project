@@ -133,6 +133,23 @@ header {
   }
 
 #slide-3 {
+  input:focus {
+    outline-width: 0;
+  }
+  a{
+   color: #f26d7d;
+  }
+  input[type="text"]
+  {
+    background: transparent;
+    border: none;
+    font-family: 'courb';
+    width: 260px;
+    border-bottom: solid #f26d7d;
+  }
+  #distance{
+    width: 200px;
+  }
   color: #f26d7d;
   font-family: 'courb';
   font-size: 34px;
