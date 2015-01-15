@@ -84,7 +84,14 @@
     </section>
 
     <section id="slide-4">
+        <div class="container">
+        <p class="awesome-ideas">Some pretty<br>
+        awesome idea's</p>
+        </div>
 
+        <div class="gallery">
+            
+        </div>
     </section>
 
 </main>

@@ -27,8 +27,16 @@ $('#about,#home,#sonario,#ideas').click(function(){
     return false;
 });
 
-
-
+//slide-show
+$(function() {
+  $('.adaptive-slider').adaptiveSlider({
+    opacity: 0.7,
+    normalizedTextColors: {
+      light: '#f1f1f1',
+      dark: '#222'
+    }
+  });
+});
 
 //open or close navigation
 $('#nav-button').click( function(event){
