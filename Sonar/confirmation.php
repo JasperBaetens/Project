@@ -44,7 +44,7 @@
 
                 <div class="tweet">
                 <form autocomplete="off">
-                    <p>It's name is '<?php echo $_POST["name"] ?>'</p>
+                    <p>It's name is '<?php if(isset($_POST["name"])){echo $_POST["name"]} ?>'</p>
                     <p>Tweet it to <input type="text" name="tweet" id="tweet" placeholder="............" value="" /> </p>
                     </br>
                     
