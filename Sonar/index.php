@@ -24,7 +24,7 @@
                 <li><a href="#slide-1" id="home">Home</a></li>
                 <li><a href="#slide-2" id="about">About</a></li>
                 <li><a href="#slide-3" id="sonario">Make a Sonario</a></li>
-                <li><a href="#slide-4" id="ideas">Share your ideas</a></li>
+                <li><a href="#slide-4" id="ideas">Awesome idea's</a></li>
                 </span>
                 <li ><a href=""><img src="img/stroke.png"></a></li>
             </ul>
@@ -66,21 +66,25 @@
 
     <section id="slide-3">
         <div class="container">
-            <form autocomplete="off" action="index.php" method="POST">
-                <p>I&rsquo;d like to name my sonario <input type="text" name="name" placeholder="............" /></p>
-                <p>It&rsquo;s latitude* is <input type="text" name="lat" placeholder="............" /></p>
-                <p>and longitude* is <input type="text" name="long" placeholder="............" /> </p>
-                <p>The range from the sonario is <input type="text" name="range" placeholder="............" /> meters.</p>
+            <form autocomplete="off">
+                <p>I&rsquo;d like to name my sonario 	<input type="text" maxlength="45" name="name" id="sonario" placeholder="............" /></p>
+                <p>It&rsquo;s longitude* is <input type="text" name="name" id="longitude" placeholder="............" />
+                <p>and latitude* is <input type="text" name="name" maxlength="20" id="latitude" placeholder="............" /></p>
+                <p>The range from the sonario is <input type="text" maxlength="20" name="name" id="distance" placeholder="........." /> meters.</p>
 
-                <button type="submit" name="foo" id="sonario-btn">
+
+                <button type="submit" name="foo" value="bar" id="sonario-btn">
                     <img src="img/sticker-create.png" width="200px;" id="scenario-sticker">
                 </button>
 
             </form>
-
             <p class="text-small">*Find position <a href="http://www.latlong.net/" target="_blank">here</a></p>
 
         </div>
+    </section>
+
+    <section id="slide-4">
+
     </section>
 
 </main>

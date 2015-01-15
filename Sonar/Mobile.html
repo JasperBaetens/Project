@@ -19,8 +19,8 @@
             <ul>
                 <span class="hover-links">
                 <li><a href="#slide-1" id="home">Home</a></li>
-                <li><a href="#slide-2" id="about">About</a></li>
-                <li><a href="#slide-3" id="sonario">Make a Sonario</a></li>
+                <li><a href="" id="about">About</a></li>
+                <li><a href="" id="sonario">Make a Sonario</a></li>
                 </span>
                 <li ><a href=""><img src="img/stroke.png" width="50px;"></a></li>
             </ul>
@@ -40,13 +40,24 @@
 </section>
 
 <section id="slide-2">
+    <div class="container">
+        <form autocomplete="off" class="form">
+            <p>Where are we going? 	<input type="text" maxlength="45" name="name" id="sonario" placeholder="" /></p>
+            <!--<p class="sonario-name">(Sonario name)</p>-->
+            <button type="submit" name="foo" value="bar" id="sonario-btn">
+                Start
+            </button>
 
+        </form>
+        <a href=""><img src="img/question.png" class="question"></a>
+    </div>
 </section>
 
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
 <script src="js/main.js"></script>
+<script src="js/mobile.js"></script>
 
 </body>
 </html>

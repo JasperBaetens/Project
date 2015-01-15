@@ -1,6 +1,12 @@
 @font-face {
   font-family: 'beat';
   src: url("../font/beat.ttf"); }
+@font-face {
+  font-family: 'courb';
+  src: url("../font/courbd.ttf"); }
+@font-face {
+  font-family: 'cour';
+  src: url("../font/cour.ttf"); }
 header {
   font-family: 'beat', 'Georgia', serif;
   font-size: 64px;
@@ -65,17 +71,49 @@ header {
     margin-top: 24vh; }
   #slide-1 .sticker {
     margin-left: 27.5vw;
-    margin-top: 25vw; }
+    margin-top: 20vw; }
     #slide-1 .sticker img {
       width: 45vw; }
 
 #slide-2 {
   position: relative;
   background-position: center center;
-  background: red;
+  background: #f26d7d;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   height: 100vh;
   width: 100%;
-  z-index: 2; }
+  z-index: 2;
+  color: #fffefe;
+  font-family: 'cour';
+  font-size: 28px; }
+  #slide-2 input:focus {
+    outline-width: 0; }
+  #slide-2 input[type="text"] {
+    background: transparent;
+    border: none;
+    font-family: 'cour';
+    font-size: 24px;
+    width: 75vw;
+    border-bottom: solid #fffefe; }
+  #slide-2 .container {
+    margin-left: 10vw;
+    width: 80vw;
+    padding-top: 33vh; }
+  #slide-2 .sonario-name {
+    font-size: 16px; }
+  #slide-2 #sonario-btn {
+    background: none;
+    border: solid #fffefe 2px;
+    color: #fffefe;
+    padding: 10px;
+    font-family: 'cour';
+    font-size: 20px;
+    width: 30%;
+    margin-left: 35%;
+    margin-top: 10vh; }
+  #slide-2 .question {
+    width: 20%;
+    margin-left: 40%;
+    margin-top: 20vh; }

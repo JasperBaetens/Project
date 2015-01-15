@@ -133,6 +133,44 @@ header {
   }
 
 #slide-3 {
+.confirm{
+p{
+  margin: 0;
+}
+  font-family: 'cour';
+    text-align: center;
+    font-size: 48px;
+}
+.logo{
+  width: 26vw;
+  //margin-left: 37vw;
+}
+.tweet{
+  margin-top: 200px;
+  color: #186f5c;
+  font-size: 32px;
+    input[type="text"]
+  {
+    font-family: 'cour';
+    border-bottom: solid #186f5c;
+  }
+  #tweet-btn{
+        background:none;border:solid #186f5c 2px;color:#186f5c;
+    padding: 10px;
+    font-family: 'cour';
+    font-size: 32px;
+    width: 120px;
+    //margin-left: 35%;
+    margin-top: 40px;
+  }
+}
+#tweet{
+  width: 100px;
+
+}
+.your{
+  padding-top: 150px;
+}
   input:focus {
     outline-width: 0;
   }
@@ -178,6 +216,18 @@ header {
   #sonario-btn{
     background:none;border:0;color:#ff0000
   }
+  }
+
+    #slide-4 {
+    position: relative;
+    background-position: center center;
+    background-image: url("../img/idea.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    z-index: 2;
   }
 
 
