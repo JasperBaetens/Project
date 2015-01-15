@@ -39,17 +39,35 @@
         <div class="confirm">
             <div class="components">
                 <p class="your">Your</p>
-                <a href="http://localhost/project/Sonar/"><img src="img/LOGO.png" alt="Sonario" class="logo"></a>
+                <a href="http://localhost/project/Sonar/"><img src="img/LOGO-pink.png" alt="Sonario" class="logo"></a>
                 <p>Has been created!</p>
 
                 <div class="tweet">
                 <form autocomplete="off">
                     <p>It's name is 'myplace'</p>
-                    <p>Tweet it to <input type="text" name="tweet" id="tweet" placeholder=". . ." /> </p>
-
-                    <button type="submit" name="tweet-btn" id="tweet-btn">
-                        Tweet
-                    </button>
+                    <p>Tweet it to <input type="text" name="tweet" id="tweet" placeholder="............" value="" /> </p>
+                    </br>
+                    
+                    
+                    <a href="https://twitter.com/intent/tweet?screen_name=NaneBoudewijns&text=sonario" id="tweet-btn" data-related="">Tweet</a>
+                        <script>
+                            var tweet = document.getElementById("tweet");
+                            
+                            var btn = document.getElementById("tweet-btn");
+                            
+                            
+                            
+                            function useValue() {
+                                var val = tweet.value;
+                                btn.setAttribute("href", 'https://twitter.com/intent/tweet?screen_name='+val+'&text=test%20%23sonario');
+                            }
+                            tweet.onchange = useValue;  
+                            
+                            
+                            
+                            
+                            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id))                  {js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+                    </script>
                 </form>
                 </div>
             </div> 
