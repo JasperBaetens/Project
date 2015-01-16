@@ -69,7 +69,7 @@
     <section id="slide-3">
         <div class="container">
             
-            
+            <p id="validator"></p>
             
             <form autocomplete="off" action="confirmation.php" method="POST">
                 <p>I&rsquo;d like to name my sonario <input type="text" name="name" placeholder="............" required /></p>
