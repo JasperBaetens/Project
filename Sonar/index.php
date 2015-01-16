@@ -134,7 +134,8 @@
 <script src="js/skrollr.js"></script>
 <script src="js/main.js"></script>
 <script src="js/desktop.js"></script>
-
+<script src="js/validation.js"></script>
+    
 <script type="text/javascript">
     var s = skrollr.init();
 </script>
