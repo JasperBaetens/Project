@@ -63,7 +63,10 @@
     </section>
 
     <section id="slide-2">
-
+        <video width="100%" height="100%" autoplay muted loop>
+                <source src="video/1.mp4" type="video/mp4"/>
+                <source src="video/1.webm" type="video/webm" />
+            </video>
     </section>
 
     <section id="slide-3">
