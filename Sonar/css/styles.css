@@ -222,6 +222,11 @@ header {
     #slide-4 #footer a {
       color: #7ef7dc; }
 
+#back {
+  position: fixed;
+  left: 20px;
+  top: 30px; }
+
 @media screen and (max-width: 1140px) {
   .logo {
     width: 36vw !important;
@@ -239,12 +244,15 @@ header {
 
   .tweet-wrapper {
     position: absolute;
-    bottom: 20px;
-    width: 30vw;
-    left: 35vw; }
+    bottom: 60px;
+    width: 80vw;
+    left: 10vw; }
 
   .your {
-    padding-top: 70px !important; } }
+    padding-top: 120px !important; }
+
+  .logo-3 {
+    width: 50vw !important; } }
 @media screen and (max-height: 600px) {
   .sticker {
     display: none; }
