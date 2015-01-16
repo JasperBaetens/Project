@@ -60,8 +60,6 @@
                             
                             var btn = document.getElementById("tweet-btn");
                             
-                            
-                            
                             function useValue() {
                                 var val = tweet.value;
                                 btn.setAttribute("href", 'https://twitter.com/intent/tweet?screen_name='+val+'&text=+I%20have%20made%20a%20sonario%20fo%20you:%20+<?php echo $_POST["name"] ?>+%20%23sonario');
@@ -69,8 +67,7 @@
                             tweet.onchange = useValue;  
                             
                             
-                            
-                            
+                        
                             !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id))                  {js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
                     </script>
 

@@ -59,7 +59,7 @@
                 <p>and the range from the sonario is <input type="text" name="range" placeholder="............" /> meters.</p>
 
                 
-                <p>invisible<input type="text" id='lat' name="lat" value='' /></p>
+                <p>invisible?<input type="text" id='lat' name="lat" value='' /></p>
                 <p>invisible<input type="text" id='long' name="long" value='' /> </p>
                 
                 <button type="submit" name="foo" id="sonario-btn">
@@ -69,14 +69,7 @@
             </form>
             
             <script>
-                var longitude = '7'; //van geolocatie (ik snapte da ni direct)
-                var latitude = '7';
-                
-                var long = document.getElementById("long");
-                var lat = document.getElementById("lat");
-                            
-                long.setAttribute("value", longitude);
-                lat.setAttribute("value", latitude);          
+       
                            
             </script>
             
@@ -91,6 +84,7 @@
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
 <script src="js/main.js"></script>
 <script src="js/mobile.js"></script>
+<script src="js/geo.js"></script>
 
 </body>
 </html>

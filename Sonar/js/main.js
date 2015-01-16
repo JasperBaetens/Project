@@ -33,6 +33,8 @@ $('#nav-button').click( function(event){
     toggleNavigation();
 });
 
+
+
 /*
 
 $(window).resize(function(){

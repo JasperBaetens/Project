@@ -45,10 +45,12 @@ function positionSucces(position) {
     currentInterval = 1000+(hideDistance/width)*1000;
 
 
-    document.getElementById("lat").innerHTML = latitude;
-    document.getElementById("long").innerHTML = longitude;
-    document.getElementById("distance").innerHTML = hideDistance;
-    //document.getElementById("speed").innerHTML = currentInterval;
+                
+                var long = document.getElementById("long");
+                var lat = document.getElementById("lat");
+                            
+                long.setAttribute("value", longitude);
+                lat.setAttribute("value", latitude);   
 
 }
 
