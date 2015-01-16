@@ -68,19 +68,22 @@
 
     <section id="slide-3">
         <div class="container">
+            
+            
+            
             <form autocomplete="off" action="confirmation.php" method="POST">
-                <p>I&rsquo;d like to name my sonario <input type="text" name="name" placeholder="............" /></p>
-                <p>It&rsquo;s latitude* is <input type="text" name="lat" placeholder="............" /></p>
-                <p>and longitude* is <input type="text" name="long" placeholder="............" /> </p>
-                <p>The range from the sonario is <input type="text" name="range" placeholder="............" /> meters.</p>
-
+                <p>I&rsquo;d like to name my sonario <input type="text" name="name" placeholder="............" required /></p>
+                <p>It&rsquo;s latitude* is <input type="text" id='lat' name="lat" placeholder="............" required /></p>
+                <p>and longitude* is <input type="text" id='long' name="long" placeholder="............" required /> </p>
+                <p>The range from the sonario is <input type="text" id='range' name="range" placeholder="............" required /> meters.</p>
+                <p>if(isset($error){echo $error}</p>
                 <button type="submit" name="foo" id="sonario-btn">
                     <img src="img/sticker-create.png" width="200px;" id="scenario-sticker">
                 </button>
 
             </form>
             
-            
+        
             
             
             <p class="text-small">*Find position <a href="http://www.latlong.net/" target="_blank">here</a></p>
@@ -145,7 +148,7 @@
 
             /*$statement = $db->prepare("SELECT lat FROM Sonario WHERE name='myplace' LIMIT 1");
             $statement->execute();
-            $row = $statement->fetch(); */
+            $row = $statement->fetch(); 
 
             //echo $row['lat'];
 
@@ -161,4 +164,4 @@
                 ));
             }
 
-            ?>
+            ?>*/
