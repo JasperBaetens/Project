@@ -28,7 +28,6 @@
             }
         ?>
     <form>
-    <input type="button" value="Start tracking" id="doTimer">
 
     <audio id="myAudio" controls>
         <!-- <source src="Abstract.ogg" type="audio/ogg"> -->
