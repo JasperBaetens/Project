@@ -42,7 +42,9 @@ function positionSucces(position) {
                 var destinationLatitude = document.getElementById('latit').value;
                 var destinationLongitude = document.getElementById('longit').value;
                 var destinationRadius = document.getElementById('rad').value;
-
+                console.log('latitude:' + destinationLatitude);
+                console.log('longitude:' + destinationLongitude);
+                console.log('destination:' + destinationRadius);
     var longitude = position.coords.longitude;
     var latitude = position.coords.latitude;
     var hideDistance = distance(longitude, latitude, destinationLongitude, destinationLatitude)
