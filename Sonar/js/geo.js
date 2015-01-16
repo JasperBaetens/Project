@@ -5,9 +5,6 @@ var timer_is_on = 0;
 var doTimer = document.getElementById("doTimer");
 var stopCount = document.getElementById("stopCount");
 var vid = document.getElementById("myAudio");
-console.log('geo loaded');
-
-
 
 navigator.geolocation.watchPosition(
     positionSucces,
@@ -38,43 +35,32 @@ if (typeof(Number.prototype.toRad) === "undefined") {
     }
 }
 
+    var destinationLongitude = document.getElementById('longit').value;
+    var destinationLatitude = document.getElementById('latit').value;
+    var destinationRadius = document.getElementById('rad').value;
+
 function positionSucces(position) {
-                console.log('succes');
-                var destinationLatitude = document.getElementById('latit').value;
-                var destinationLongitude = document.getElementById('longit').value;
-                var destinationRadius = document.getElementById('rad').value;
+    
+    var longitude = position.coords.longitude;
+    var latitude = position.coords.latitude;
+    var hideDistance = distance(longitude, latitude, destinationLongitude, destinationLatitude);
+    console.log(hideDistance);
 
-                console.log('latitude:' + destinationLatitude);
-                console.log('longitude:' + destinationLongitude);
-                console.log('radius:' + destinationRadius);
+    currentInterval = 1000+(hideDistance/destinationRadius)*1000;
 
-                var longitude = position.coords.longitude;
-                var latitude = position.coords.latitude;
-                var hideDistance = distance(longitude, latitude, destinationLongitude, destinationLatitude);
-                hideDistance = hideDistance*1000;
-                console.log(hideDistance);
-
-                currentInterval = 1000+(hideDistance/destinationRadius);
-
-
-
-                var long = document.getElementById("long-4");
-                var lat = document.getElementById("lat-4");
-                            
-                long.setAttribute("value", longitude);
-                lat.setAttribute("value", latitude); 
+    console.log(currentInterval);
+                
+ 
 
 }
 
 function positionError(position){
 
-    }
+}
 
 
 function timedCount() {
-   // document.getElementById('txt').value = c;
-    //c = c + 1;
-    //console.log('test');
+    console.log('test');
 
     vid.play();
 

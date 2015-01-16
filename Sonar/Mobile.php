@@ -4,11 +4,11 @@
     <link rel="icon" type="image/png" href="img/favicon.png" />
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/mobile.css">
-    <script src="js/geo.js"></script>
+    
 </head>
 
 <body>
-
+<script src="js/geo.js"></script>
 <header>
     <div class="navigation-closed" id="navigation">
         <a href=""  id="nav-button">
@@ -42,33 +42,14 @@
 
 <section id="slide-2">
     <div class="container">
-        <form autocomplete="off" action="Mobile.php" method="POST" class="form">
+        <form autocomplete="off" action="developer.php" method="POST" class="form">
             <p>Where are we going? 	<input type="text" maxlength="45" name="name" id="sonario" placeholder="" /></p>
             <!--<p class="sonario-name">(Sonario name)</p>-->
             <button type="submit" name="foo" value="bar" id="sonario-btn">
                 Start
             </button>
-
         </form>
-        <?php
 
-            $db = new PDO('mysql:host=localhost;dbname=dbsonario;charset=utf8', 'root', '');
-            if(isset($_REQUEST['foo']))
-            {
-                $select = $db->prepare("SELECT * FROM Sonario WHERE name='".mysql_escape_string($_POST['name'])."' LIMIT 1");
-                $select->execute();
-                $data = $select->fetch();
-                $lat = $data['lat'];
-                $long = $data['longit'];
-                $radius = $data['radius'];
-                
-                if(isset($data)){
-                    echo '<input type="hidden" name="lat" id="lati" value="'.$lat.'">';
-                    echo '<input type="hidden" name="longit" id="longi" value="'.$long.'">';
-                    echo '<input type="hidden" name="rad" id="rad" value="'.$radius.'">';
-                }
-            }
-        ?>
         
         
         
@@ -95,8 +76,8 @@
                 <p>the range from the sonario is <input type="text" name="range" placeholder="............" /> m.</p>
 
                 
-                <input type="hidden" id='lat' name="lat" value='' />
-                <input type="hidden" id='long' name="long" value='' /> 
+                <input type="hidden" id='lat-4' name="lat" value='' />
+                <input type="hidden" id='long-4' name="long" value='' /> 
                 
                 <button type="submit" name="foo" id="sonario-btn">
                     <img src="img/create-sonario.png" width="200px;" id="sonario-sticker">
