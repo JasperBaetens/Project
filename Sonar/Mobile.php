@@ -63,8 +63,8 @@
                 $radius = $data['radius'];
                 
                 if(isset($data)){
-                    echo '<input type="hidden" name="lat" id="latit" value="'.$lat.'">';
-                    echo '<input type="hidden" name="longit" id="longit" value="'.$long.'">';
+                    echo '<input type="hidden" name="lat" id="lati" value="'.$lat.'">';
+                    echo '<input type="hidden" name="longit" id="longi" value="'.$long.'">';
                     echo '<input type="hidden" name="rad" id="rad" value="'.$radius.'">';
                 }
             }

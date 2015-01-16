@@ -50,15 +50,16 @@ function positionSucces(position) {
 
                 var longitude = position.coords.longitude;
                 var latitude = position.coords.latitude;
-                var hideDistance = (distance(longitude, latitude, destinationLongitude, destinationLatitude))*1000;
+                var hideDistance = distance(longitude, latitude, destinationLongitude, destinationLatitude);
+                hideDistance = hideDistance*1000;
                 console.log(hideDistance);
 
                 currentInterval = 1000+(hideDistance/destinationRadius);
 
 
 
-                var long = document.getElementById("long");
-                var lat = document.getElementById("lat");
+                var long = document.getElementById("long-4");
+                var lat = document.getElementById("lat-4");
                             
                 long.setAttribute("value", longitude);
                 lat.setAttribute("value", latitude); 
