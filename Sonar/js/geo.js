@@ -45,7 +45,7 @@ function positionSucces(position) {
     var hideDistance = distance(longitude, latitude, destinationLongitude, destinationLatitude)*1000;
     console.log(hideDistance);
 
-    var currentInterval = 1000+(hideDistance/destinationRadius)*1000;
+    var currentInterval = 1000+(hideDistance/destinationRadius)*2000;
 
     console.log(currentInterval);
     timedCount(currentInterval);
@@ -59,11 +59,11 @@ function positionError(position){
 
 
 function timedCount(currentInterval) {
-    console.log('test');
-
-    vid.play();
-
-    t = setTimeout("timedCount()", currentInterval);
+    //console.log(currentInterval);
+    if(vid){
+    setInterval(function(){ vid.play(); }, currentInterval);
+    }
+    //t = setTimeout("timedCount(currentInterval)", currentInterval);
 
 }
 
