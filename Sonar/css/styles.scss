@@ -262,10 +262,10 @@ p{
                 //width: 100px;
                 position: relative;
                 margin-left: 1.15vw;
-                height: 6.8vh;
+                height: 8.8vh;
                 background: #7ef7dc;
                 width: 85.9%;
-                margin-top: -70px;
+                margin-top: -100px;
                 z-index: 10;
                 color: #186f5c;
                 font-size: 1.6vw;
@@ -304,19 +304,10 @@ p{
 @media screen and (max-width : 1140px){
         .gallery{
             .square{
-                //width: 100px;
-                position: relative;
-                margin-left: 1.2vw;
-                height: 4.8vh;
-                background: #7ef7dc;
-                width: 85.6%;
-                margin-top: -100px;
-                z-index: 10;
-                color: #186f5c;
-                font-size: 1.6vw;
-                padding-top: 14px;
-                padding-left: 5px;
-                padding-right: 5px;
+                margin-left: 1.2vw !important;
+                height: 4.8vh !important;
+                width: 85.6% !important;
+                margin-top: -70px !important;
             }
           }
       
