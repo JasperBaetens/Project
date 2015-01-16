@@ -49,9 +49,11 @@ function positionSucces(position) {
 
     console.log(currentInterval);
     timedCount(currentInterval);
- 
-
+    
+    document.getElementById('long-4').value = longitude;
+    document.getElementById('lat-4').value = latitude;
 }
+
 
 function positionError(position){
 

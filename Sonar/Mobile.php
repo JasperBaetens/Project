@@ -79,9 +79,6 @@
                 <input type="hidden" id='lat-4' name="lat" value='' />
                 <input type="hidden" id='long-4' name="long" value='' /> 
                 
-                <button type="submit" name="foo" id="sonario-btn">
-                    <img src="img/create-sonario.png" width="200px;" id="sonario-sticker">
-                </button>
 
             </form>
             

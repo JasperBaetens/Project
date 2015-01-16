@@ -88,6 +88,7 @@ header {
 #slide-2 {
   position: relative;
   background-position: center center;
+  background: red;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -225,9 +226,6 @@ header {
   position: fixed;
   left: 20px;
   top: 30px; }
-
-#myAudio {
-  display: none; }
 
 @media screen and (max-width: 1140px) {
   .gallery .square {
