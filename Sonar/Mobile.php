@@ -41,7 +41,7 @@
 
 <section id="slide-2">
     <div class="container">
-        <form autocomplete="off" class="form">
+        <form autocomplete="off" action="Mobile.php" method="POST" class="form">
             <p>Where are we going? 	<input type="text" maxlength="45" name="name" id="sonario" placeholder="" /></p>
             <!--<p class="sonario-name">(Sonario name)</p>-->
             <button type="submit" name="foo" value="bar" id="sonario-btn">
@@ -49,6 +49,28 @@
             </button>
 
         </form>
+        <?php
+
+            $db = new PDO('mysql:host=localhost;dbname=dbsonario;charset=utf8', 'root', '');
+            if(isset($_REQUEST['foo']))
+            {
+                $select = $db->prepare("SELECT * FROM Sonario WHERE name='".mysql_escape_string($_POST['name'])."' LIMIT 1");
+                $select->execute();
+                $data = $select->fetch();
+                $lat = $data['lat'];
+                $long = $data['longit'];
+                $radius = $data['radius'];
+                
+                if(isset($data)){
+                    echo '<input type="hidden" name="lat" id="latit" value="'.$lat.'">';
+                    echo '<input type="hidden" name="longit" id="longit" value="'.$long.'">';
+                    echo '<input type="hidden" name="rad" id="rad" value="'.$radius.'">';
+                }
+            }
+        ?>
+        
+        
+        
         <a href="#slide-3" id="question"><img src="img/question.png" class="question"></a>
     </div>
 </section>
