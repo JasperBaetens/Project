@@ -16,16 +16,14 @@ navigator.geolocation.watchPosition(
     }
 );
 
-function distance(lon1, lat1, lon2, lat2) {
-    var R = 6371; // Radius of the earth in km
-    var dLat = (lat2-lat1).toRad();  // Javascript functions in radians
-    var dLon = (lon2-lon1).toRad();
-    var a = Math.sin(dLat/2) * Math.sin(dLat/2) +
-        Math.cos(lat1.toRad()) * Math.cos(lat2.toRad()) *
-        Math.sin(dLon/2) * Math.sin(dLon/2);
-    var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
-    var d = R * c; // Distance in km
-    return d;
+function distance(lat1, lon1, lat2, lon2) {
+  var R = 6371;
+  var a = 
+     0.5 - Math.cos((lat2 - lat1) * Math.PI / 180)/2 + 
+     Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) * 
+     (1 - Math.cos((lon2 - lon1) * Math.PI / 180))/2;
+
+  return R * 2 * Math.asin(Math.sqrt(a));
 }
 
 /** Converts numeric degrees to radians */
@@ -38,6 +36,7 @@ if (typeof(Number.prototype.toRad) === "undefined") {
     var destinationLongitude = document.getElementById('longit').value;
     var destinationLatitude = document.getElementById('latit').value;
     var destinationRadius = document.getElementById('rad').value;
+    console.log(destinationRadius);
 
 function positionSucces(position) {
     
@@ -46,7 +45,7 @@ function positionSucces(position) {
     var hideDistance = distance(longitude, latitude, destinationLongitude, destinationLatitude);
     console.log(hideDistance);
 
-    currentInterval = 1000+(hideDistance/destinationRadius)*1000;
+    var currentInterval = 1000+(hideDistance/destinationRadius)*1000;
 
     console.log(currentInterval);
                 
@@ -76,7 +75,7 @@ document.getElementById("doTimer").onclick = function () {
     }
 }
 
-stopCount.onclick = function () {
+/*stopCount.onclick = function () {
     clearTimeout(t);
     timer_is_on = 0;
-}
+}*/
