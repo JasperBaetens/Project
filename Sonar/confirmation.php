@@ -86,7 +86,7 @@
 
                     <?php
 
-var_dump($_POST);
+//var_dump($_POST);
 
             $db = new PDO('mysql:host=localhost;dbname=dbsonario;charset=utf8', 'root', '');
 
