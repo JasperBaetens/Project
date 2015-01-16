@@ -115,12 +115,14 @@ header {
     font-size: 48px; }
     #slide-3 .confirm p {
       margin: 0; }
-  #slide-3 .logo {
+  #slide-3 .logo-3 {
     width: 26vw; }
   #slide-3 .tweet {
     margin-top: 200px;
     color: #186f5c;
     font-size: 32px; }
+    #slide-3 .tweet a {
+      text-decoration: none; }
     #slide-3 .tweet input[type="text"] {
       font-family: 'cour';
       border-bottom: solid #186f5c; }
@@ -233,10 +235,22 @@ header {
   .arrow {
     margin-left: 46vw !important; }
     .arrow img {
-      width: 8vw !important; } }
+      width: 8vw !important; }
+
+  .tweet-wrapper {
+    position: absolute;
+    bottom: 20px;
+    width: 30vw;
+    left: 35vw; }
+
+  .your {
+    padding-top: 70px !important; } }
 @media screen and (max-height: 600px) {
   .sticker {
     display: none; }
 
   .arrow {
+    display: none; }
+
+  .tweet {
     display: none; } }

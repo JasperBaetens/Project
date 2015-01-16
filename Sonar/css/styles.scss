@@ -139,11 +139,11 @@ header {
 p{
   margin: 0;
 }
-  font-family: 'cour';
+     font-family: 'cour';
     text-align: center;
     font-size: 48px;
 }
-.logo{
+.logo-3{
   width: 26vw;
   //margin-left: 37vw;
 }
@@ -151,6 +151,10 @@ p{
   margin-top: 200px;
   color: #186f5c;
   font-size: 32px;
+
+    a{
+    text-decoration: none;
+    }
     input[type="text"]
   {
     font-family: 'cour';
@@ -312,12 +316,25 @@ p{
       width: 8vw !important;
     }
   }
+  .tweet-wrapper{
+    position: absolute;
+    bottom: 20px;
+    width: 30vw;
+    left: 35vw;
+  }
+  .your{
+    padding-top: 70px !important;
+  }
 }
 @media screen and (max-height : 600px){
   .sticker {
     display: none;
   }
   .arrow {
+    display: none;
+  }
+
+  .tweet{
     display: none;
   }
 }
