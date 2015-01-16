@@ -42,15 +42,17 @@ function positionSucces(position) {
                 var destinationLatitude = document.getElementById('latit').value;
                 var destinationLongitude = document.getElementById('longit').value;
                 var destinationRadius = document.getElementById('rad').value;
+
                 console.log('latitude:' + destinationLatitude);
                 console.log('longitude:' + destinationLongitude);
-                console.log('destination:' + destinationRadius);
+                console.log('radius:' + destinationRadius);
+
     var longitude = position.coords.longitude;
     var latitude = position.coords.latitude;
-    var hideDistance = distance(longitude, latitude, destinationLongitude, destinationLatitude)
+    var hideDistance = (distance(longitude, latitude, destinationLongitude, destinationLatitude))*1000;
     console.log(hideDistance);
 
-    currentInterval = 1000+(hideDistance/destinationRadius)*1000;
+    currentInterval = 1000+(hideDistance/destinationRadius);
 
 
 
