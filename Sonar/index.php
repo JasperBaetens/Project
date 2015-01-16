@@ -4,6 +4,8 @@
     <link rel="icon" type="image/png" href="img/favicon.png" />
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
+        <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="js/bjqs-1.3.min.js"></script>
 </head>
 
 <body>
@@ -90,10 +92,35 @@
         <div class="container">
         <p class="awesome-ideas">Some pretty<br>
         awesome idea's</p>
-        </div>
+        
 
         <div class="gallery">
-            
+                <div id="img-1">
+                <a href="https://wordpress.com/">
+                    <img src="img/scouts.png">
+                    <div class="square">Group activity for scouting</div>
+                </a>
+                </div>
+                <div id="img-2">
+                <a href="https://wordpress.com/">
+                    <img src="img/kid.png">
+                    <div class="square">Treasure hunt for children</div>
+                </a>
+                </div>
+                <div id="img-3">
+                <a href="https://wordpress.com/">
+                    <img src="img/friends.png">
+                    <div class="square">Meeting someone you really missed</div>
+                </a>
+                </div>
+        </div>
+
+
+        </div>
+        <div id="footer">
+            <p>your creative idea here? </p>
+            <p>send us an e-mail with your idea and some pictures </p>
+            <p><a href="mailto:ideas@sonar.io?Subject=Idea" target="_top">ideas@sonar.io</a></p>
         </div>
     </section>
 

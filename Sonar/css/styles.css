@@ -175,11 +175,50 @@ header {
   z-index: 2; }
   #slide-4 .container {
     color: #7ef7dc;
-    padding-top: 6vh;
-    padding-left: 20vw;
-    padding-right: 20vw;
-    font-size: 72px;
+    padding-top: 2vh;
+    width: 100%;
+    font-size: 64px;
+    text-align: center;
+    margin-bottom: 60px; }
+    #slide-4 .container .awesome-ideas {
+      margin-bottom: 60px; }
+    #slide-4 .container .gallery {
+      width: 90%;
+      margin-left: 10%;
+      background: red; }
+      #slide-4 .container .gallery div {
+        float: left;
+        margin-right: 9vw;
+        width: 23%; }
+        #slide-4 .container .gallery div img {
+          width: 100%;
+          z-index: 5;
+          position: relative; }
+        #slide-4 .container .gallery div .square {
+          position: relative;
+          margin-left: 1.2vw;
+          height: 8.8vh;
+          background: #7ef7dc;
+          width: 85.6%;
+          margin-top: -100px;
+          z-index: 10;
+          color: #186f5c;
+          font-size: 1.6vw;
+          padding-top: 14px;
+          padding-left: 5px;
+          padding-right: 5px; }
+  #slide-4 #footer {
+    color: #7ef7dc;
+    width: 100%;
+    height: 116px;
+    background: #186f5c;
+    z-index: 100;
+    position: absolute;
+    bottom: 0;
+    opacity: 0.6;
     text-align: center; }
+    #slide-4 #footer a {
+      color: #7ef7dc; }
 
 @media screen and (max-width: 1140px) {
   .logo {

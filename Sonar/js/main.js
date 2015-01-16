@@ -1,6 +1,6 @@
 var lastWidth = $(window).width();
 
-//smooth scroll to slide 2
+//smooth scroll
 $('#arrow-1,#sticker').click(function(){
     $('html, body').animate({
         scrollTop: $( $(this).attr('href') ).offset().top
@@ -25,17 +25,6 @@ $('#about,#home,#sonario,#ideas').click(function(){
     }, 500);
     toggleNavigation();
     return false;
-});
-
-//slide-show
-$(function() {
-  $('.adaptive-slider').adaptiveSlider({
-    opacity: 0.7,
-    normalizedTextColors: {
-      light: '#f1f1f1',
-      dark: '#222'
-    }
-  });
 });
 
 //open or close navigation
