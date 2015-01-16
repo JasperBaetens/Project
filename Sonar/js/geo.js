@@ -7,8 +7,7 @@ var stopCount = document.getElementById("stopCount");
 var vid = document.getElementById("myAudio");
 console.log('geo loaded');
 
-long.setAttribute("value", longitude);
-lat.setAttribute("value", latitude); 
+
 
 navigator.geolocation.watchPosition(
     positionSucces,
@@ -40,7 +39,7 @@ if (typeof(Number.prototype.toRad) === "undefined") {
 }
 
 function positionSucces(position) {
-
+                console.log('succes');
                 var destinationLatitude = document.getElementById('latit').value;
                 var destinationLongitude = document.getElementById('longit').value;
                 var destinationRadius = document.getElementById('rad').value;
@@ -61,7 +60,8 @@ function positionSucces(position) {
                 var long = document.getElementById("long");
                 var lat = document.getElementById("lat");
                             
-  
+                long.setAttribute("value", longitude);
+                lat.setAttribute("value", latitude); 
 
 }
 
