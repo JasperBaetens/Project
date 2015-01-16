@@ -76,7 +76,7 @@
                 <p>It&rsquo;s latitude* is <input type="text" id='lat' name="lat" placeholder="............" required /></p>
                 <p>and longitude* is <input type="text" id='long' name="long" placeholder="............" required /> </p>
                 <p>The range from the sonario is <input type="text" id='range' name="range" placeholder="............" required /> meters.</p>
-                <p>if(isset($error){echo $error}</p>
+                
                 <button type="submit" name="foo" id="sonario-btn">
                     <img src="img/sticker-create.png" width="200px;" id="scenario-sticker">
                 </button>
