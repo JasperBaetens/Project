@@ -60,9 +60,9 @@ function positionError(position){
 
 
 function timedCount() {
-    document.getElementById('txt').value = c;
-    c = c + 1;
-    console.log('test');
+   // document.getElementById('txt').value = c;
+    //c = c + 1;
+    //console.log('test');
 
     vid.play();
 

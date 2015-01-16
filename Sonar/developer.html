@@ -1,14 +1,16 @@
 <html>
 <head>
 <link rel="icon" type="image/png" href="img/favicon.png" />
+<link rel="stylesheet" href="css/Mobile.css">
 </head>
 
 <body>
-    <img src="img/LOGO.png" alt="Sonario">
-<form>
-    <input type="button" value="Start count!" id="doTimer">
-    <input type="text" id="txt">
-    <input type="button" value="Stop count!" id="stopCount">
+<main>
+    <section id="slide-1">
+    <img src="img/LOGO.png" alt="Sonario" class="logo">
+
+    <form>
+    <input type="button" value="Start tracking" id="doTimer">
 
     <audio id="myAudio" controls>
         <!-- <source src="Abstract.ogg" type="audio/ogg"> -->
@@ -17,11 +19,10 @@
     </audio>
 </form>
 
-<div id="lat"></div>
-<div id="long"></div>
-<div id="distance"></div>
-<div id="speed"></div>
+</section>
 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="js/mobile.js"></script>
 <script src="js/geo.js"></script>
 </body>
 </html>
