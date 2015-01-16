@@ -49,25 +49,10 @@
             </button>
 
         </form>
-        <?php
+                <?php
+                    echo '<input type="hidden" name="rad" id="testing" value="realtest">';
+                 ?>
 
-            $db = new PDO('mysql:host=localhost;dbname=dbsonario;charset=utf8', 'root', '');
-            if(isset($_REQUEST['foo']))
-            {
-                $select = $db->prepare("SELECT * FROM Sonario WHERE name='".mysql_escape_string($_POST['name'])."' LIMIT 1");
-                $select->execute();
-                $data = $select->fetch();
-                $lat = $data['lat'];
-                $long = $data['longit'];
-                $radius = $data['radius'];
-                
-                if(isset($data)){
-                    echo '<input type="hidden" name="lat" id="latit" value="'.$lat.'">';
-                    echo '<input type="hidden" name="longit" id="longit" value="'.$long.'">';
-                    echo '<input type="hidden" name="rad" id="rad" value="'.$radius.'">';
-                }
-            }
-        ?>
         
         
         

@@ -5,6 +5,8 @@ var timer_is_on = 0;
 var doTimer = document.getElementById("doTimer");
 var stopCount = document.getElementById("stopCount");
 var vid = document.getElementById("myAudio");
+console.log('geo loaded');
+
 
 navigator.geolocation.watchPosition(
     positionSucces,
@@ -36,16 +38,20 @@ if (typeof(Number.prototype.toRad) === "undefined") {
 }
 
 function positionSucces(position) {
+
+                var destinationLatitude = document.getElementById('latit').value;
+                var destinationLongitude = document.getElementById('longit').value;
+                var destinationRadius = document.getElementById('rad').value;
+
     var longitude = position.coords.longitude;
     var latitude = position.coords.latitude;
-    var hideDistance = distance(longitude, latitude, 4.3788348, 51.0925936)
+    var hideDistance = distance(longitude, latitude, destinationLongitude, destinationLatitude)
     console.log(hideDistance);
 
-    var width = 0.1;
-    currentInterval = 1000+(hideDistance/width)*1000;
+    currentInterval = 1000+(hideDistance/destinationRadius)*1000;
 
 
-                
+
                 var long = document.getElementById("long");
                 var lat = document.getElementById("lat");
                             
@@ -56,7 +62,7 @@ function positionSucces(position) {
 
 function positionError(position){
 
-}
+    }
 
 
 function timedCount() {
