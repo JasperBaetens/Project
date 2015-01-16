@@ -4,6 +4,7 @@
     <link rel="icon" type="image/png" href="img/favicon.png" />
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/mobile.css">
+    <script src="js/geo.js"></script>
 </head>
 
 <body>
@@ -115,7 +116,7 @@
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
 <script src="js/main.js"></script>
 <script src="js/mobile.js"></script>
-<script src="js/geo.js"></script>
+
 
 </body>
 </html>
