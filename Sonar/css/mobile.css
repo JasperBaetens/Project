@@ -7,6 +7,13 @@
 @font-face {
   font-family: 'cour';
   src: url("../font/cour.ttf"); }
+body input[type="text"] {
+  background: transparent;
+  border: none;
+  font-family: 'courb';
+  width: 260px;
+  border-bottom: solid #f26d7d; }
+
 header {
   font-family: 'beat', 'Georgia', serif;
   font-size: 64px;
@@ -117,3 +124,61 @@ header {
     width: 20%;
     margin-left: 40%;
     margin-top: 20vh; }
+
+#slide-3 {
+  position: relative;
+  background-position: center center;
+  background: #7ef7dc;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  z-index: 2;
+  color: #186f5c;
+  font-family: 'cour';
+  font-size: 24px; }
+  #slide-3 .container {
+    padding-top: 1vh;
+    padding-left: 10vw;
+    padding-right: 10vw; }
+  #slide-3 .about {
+    text-align: center;
+    font-size: 64px;
+    margin-bottom: 25px; }
+  #slide-3 .small-logo {
+    width: 28%;
+    margin-left: 36%; }
+  #slide-3 a {
+    color: #186f5c; }
+
+#slide-4 {
+  position: relative;
+  background-position: center center;
+  background: #f695a0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  z-index: 2;
+  color: #fffefe;
+  font-family: 'cour';
+  font-size: 30px; }
+  #slide-4 input[type="text"] {
+    width: 200px;
+    font-family: cour;
+    border-bottom: solid #fff; }
+  #slide-4 .container {
+    padding-top: 15vh;
+    padding-left: 15vw;
+    padding-right: 15vw; }
+    #slide-4 .container p {
+      text-align: center; }
+  #slide-4 input:focus {
+    outline-width: 0; }
+  #slide-4 #sonario-btn {
+    background: none;
+    border: none;
+    width: 100%;
+    margin-top: 60px; }

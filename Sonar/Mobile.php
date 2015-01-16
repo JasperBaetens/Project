@@ -19,8 +19,8 @@
             <ul>
                 <span class="hover-links">
                 <li><a href="#slide-1" id="home">Home</a></li>
-                <li><a href="" id="about">About</a></li>
-                <li><a href="" id="sonario">Make a Sonario</a></li>
+                <li><a href="#slide-3" id="about">About</a></li>
+                <li><a href="#slide-4" id="sonario">Make a Sonario</a></li>
                 </span>
                 <li ><a href=""><img src="img/stroke.png" width="50px;"></a></li>
             </ul>
@@ -49,33 +49,42 @@
             </button>
 
         </form>
-        <a href=""><img src="img/question.png" class="question"></a>
+        <a href="#slide-3" id="question"><img src="img/question.png" class="question"></a>
     </div>
 </section>
+
      <section id="slide-3">
+            <div class="container">
+                <p class="about">About</p>
+                <img src="img/small-logo.png" class="small-logo">
+                <p>
+                Sonario is a piece of technology that allows you to make your own utilization. You can <a href="#slide-4" id="create-text">create</a> a sonario by submitting a name and a range. Your current position will be used to set the location. People can track a location by entering the name of the sonario. Tracking is easy, just listen to the speed of the sound.
+                </p>
+            </div>
+        </div>
+    </section>
+
+     <section id="slide-4">
         <div class="container">
             <form autocomplete="off" action="confirmation.php" method="POST">
                 <p>I&rsquo;d like to name my sonario <input type="text" name="name" placeholder="............" /></p>
-                <p>and the range from the sonario is <input type="text" name="range" placeholder="............" /> meters.</p>
+                <p>and</p> 
+                <p>the range from the sonario is <input type="text" name="range" placeholder="............" /> m.</p>
 
                 
-                <p>invisible?<input type="text" id='lat' name="lat" value='' /></p>
-                <p>invisible<input type="text" id='long' name="long" value='' /> </p>
+                <input type="hidden" id='lat' name="lat" value='' />
+                <input type="hidden" id='long' name="long" value='' /> 
                 
                 <button type="submit" name="foo" id="sonario-btn">
-                    <img src="img/sticker-create.png" width="200px;" id="scenario-sticker">
+                    <img src="img/create-sonario.png" width="200px;" id="sonario-sticker">
                 </button>
 
             </form>
             
-            <script>
-       
-                           
-            </script>
-            
 
         </div>
     </section>
+
     
   
 

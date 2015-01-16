@@ -1,4 +1,4 @@
 if( $(window).width() > 480)
 {
-    window.location.href = "index.html";
+    window.location.href = "index.php";
 }

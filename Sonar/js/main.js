@@ -1,7 +1,7 @@
 var lastWidth = $(window).width();
 
 //smooth scroll
-$('#arrow-1,#sticker').click(function(){
+$('#arrow-1,#sticker,#question,#create-text').click(function(){
     $('html, body').animate({
         scrollTop: $( $(this).attr('href') ).offset().top
     }, 500);
@@ -12,13 +12,13 @@ $('#navigation-links').click(function(){
     // event.preventDefault();
 
 });
-
+//navigation toggle
 function toggleNavigation() {
     $('#navigation').toggleClass("navigation-open").toggleClass("navigation-closed");
     $('#nav-button-image').toggleClass("open").toggleClass("close");
     $('#navigation-links').toggleClass("links-closed").toggleClass("links");
 }
-
+//smooth scroll with navigation toggle
 $('#about,#home,#sonario,#ideas').click(function(){
     $('html, body').animate({
         scrollTop: $( $(this).attr('href') ).offset().top
@@ -33,16 +33,3 @@ $('#nav-button').click( function(event){
     toggleNavigation();
 });
 
-
-
-/*
-
-$(window).resize(function(){
-    if($(window).width()!=lastWidth){
-        if( $(window).width() > 480)
-        {
-            window.location.href = "http://localhost/project/Sonar/";
-        }
-        lastWidth = $(window).width();
-    }
-});*/
