@@ -261,15 +261,15 @@ p{
             .square{
                 //width: 100px;
                 position: relative;
-                margin-left: 1.2vw;
-                height: 8.8vh;
+                margin-left: 1.15vw;
+                height: 6.8vh;
                 background: #7ef7dc;
-                width: 85.6%;
-                margin-top: -100px;
+                width: 85.9%;
+                margin-top: -70px;
                 z-index: 10;
                 color: #186f5c;
                 font-size: 1.6vw;
-                padding-top: 14px;
+                padding-top: 7px;
                 padding-left: 5px;
                 padding-right: 5px;
             }
@@ -301,10 +301,38 @@ p{
 
 
 
-  @media screen and (max-width : 480px){}
-
-
 @media screen and (max-width : 1140px){
+        .gallery{
+            .square{
+                //width: 100px;
+                position: relative;
+                margin-left: 1.2vw;
+                height: 4.8vh;
+                background: #7ef7dc;
+                width: 85.6%;
+                margin-top: -100px;
+                z-index: 10;
+                color: #186f5c;
+                font-size: 1.6vw;
+                padding-top: 14px;
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+          }
+      
+  .form-3{
+    font-size: 24px;
+    font-family: cour;
+      input[type="text"]
+  {
+
+    font-family: 'cour' !important;
+    width: 180px !important;
+  }
+      #scenario-sticker{
+      margin-top: 4vh !important;
+    }
+  }
   .logo{
     width: 36vw !important;
     margin-left: 32vw !important;
@@ -333,6 +361,7 @@ p{
   .logo-3{
     width: 50vw !important;
   }
+
 }
 @media screen and (max-height : 600px){
   .sticker {

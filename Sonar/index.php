@@ -71,7 +71,7 @@
             
             <p id="validator"></p>
             
-            <form autocomplete="off" action="confirmation.php" method="POST">
+            <form autocomplete="off" action="confirmation.php" method="POST" class="form-3">
                 <p>I&rsquo;d like to name my sonario <input type="text" name="name" placeholder="............" required /></p>
                 <p>It&rsquo;s latitude* is <input type="text" id='lat' name="lat" placeholder="............" required /></p>
                 <p>and longitude* is <input type="text" id='long' name="long" placeholder="............" required /> </p>
