@@ -51,7 +51,7 @@ function positionSucces(position) {
 
     var currentInterval = 1000+(hideDistance/destinationRadius)*2000;
 
-    console.log('interval: 'currentInterval);
+    console.log('interval: ' + currentInterval);
     timedCount(currentInterval);
     
     document.getElementById('long-4').value = longitude;
