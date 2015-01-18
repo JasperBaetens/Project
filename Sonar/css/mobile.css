@@ -70,7 +70,7 @@ header {
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 100vh;
+  height: 800px;
   width: 100%; }
   #slide-1 .logo {
     width: 75vw;
@@ -89,7 +89,7 @@ header {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  height: 100vh;
+  height: 800px;
   width: 100%;
   z-index: 2;
   color: #fffefe;
@@ -132,7 +132,7 @@ header {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  height: 100vh;
+  height: 800px;
   width: 100%;
   z-index: 2;
   color: #186f5c;
@@ -159,7 +159,7 @@ header {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  height: 100vh;
+  height: 800px;
   width: 100%;
   z-index: 2;
   color: #fffefe;
