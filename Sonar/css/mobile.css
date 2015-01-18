@@ -70,7 +70,7 @@ header {
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 800px;
+  height: 100vh;
   width: 100%; }
   #slide-1 .logo {
     width: 75vw;
@@ -89,7 +89,7 @@ header {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  height: 800px;
+  height: 100vh;
   width: 100%;
   z-index: 2;
   color: #fffefe;
@@ -138,6 +138,8 @@ header {
   color: #186f5c;
   font-family: 'cour';
   font-size: 24px; }
+  #slide-3 .about-text {
+    font-size: 18px; }
   #slide-3 .container {
     padding-top: 1vh;
     padding-left: 10vw;
@@ -184,7 +186,7 @@ header {
     margin-top: 60px; }
 
 #myAudio {
-  display: none; }
+  display: block; }
 
 #doTimer {
   background: url("img/start.png");

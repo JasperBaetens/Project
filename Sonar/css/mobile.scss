@@ -100,7 +100,7 @@ header {
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 800px;
+  height: 100vh;
   width: 100%;
 
   .logo {
@@ -126,7 +126,7 @@ header {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  height: 800px;
+  height: 100vh;
   width: 100%;
   z-index: 2;
   color: #fffefe;
@@ -183,6 +183,9 @@ header {
   color: #186f5c;
   font-family: 'cour';
   font-size: 24px;
+  .about-text{
+    font-size: 18px;
+  }
     .container{
     padding-top: 1vh;
     padding-left: 10vw;
@@ -242,7 +245,7 @@ header {
 
 
   #myAudio{
-    display: none;
+    display: block;
   }
 
   #doTimer{

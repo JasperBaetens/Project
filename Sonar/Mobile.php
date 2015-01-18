@@ -61,7 +61,7 @@
             <div class="container">
                 <p class="about">About</p>
                 <img src="img/small-logo.png" class="small-logo">
-                <p>
+                <p class="about-text">
                 Sonario is a piece of technology that allows you to make your own utilization. You can <a href="#slide-4" id="create-text">create</a> a sonario by submitting a name and a range. Your current position will be used to set the location. People can track a location by entering the name of the sonario. Tracking is easy, just listen to the speed of the sound.
                 </p>
             </div>
