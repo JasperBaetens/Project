@@ -118,11 +118,11 @@ header {
     font-family: 'cour';
     font-size: 20px;
     width: 30%;
-    margin-left: 35%;
+    margin-left: 33%;
     margin-top: 10vh; }
   #slide-2 .question {
     width: 20%;
-    margin-left: 40%;
+    left: 40%;
     position: absolute;
     bottom: 30px; }
 

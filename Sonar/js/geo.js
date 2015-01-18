@@ -34,20 +34,24 @@ if (typeof(Number.prototype.toRad) === "undefined") {
 }
 
     var destinationLongitude = document.getElementById('longit').value;
+    console.log('destinationLongitude: ' + destinationLongitude);
     var destinationLatitude = document.getElementById('latit').value;
+    console.log('destinationLatitude: ' + destinationlatitude);
     var destinationRadius = document.getElementById('rad').value;
-    console.log(destinationRadius);
+    console.log('destinationRadius: ' + destinationRadius);
 
 function positionSucces(position) {
     
     var longitude = position.coords.longitude;
+    console.log('longitude: ' + longitude);
     var latitude = position.coords.latitude;
+    console.log('latitude: ' + longitude);
     var hideDistance = distance(longitude, latitude, destinationLongitude, destinationLatitude)*1000;
-    console.log(hideDistance);
+    console.log('distance: ' + hideDistance);
 
     var currentInterval = 1000+(hideDistance/destinationRadius)*2000;
 
-    console.log(currentInterval);
+    console.log('interval: 'currentInterval);
     timedCount(currentInterval);
     
     document.getElementById('long-4').value = longitude;
