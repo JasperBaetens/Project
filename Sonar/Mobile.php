@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta id="viewport" name="viewport" content ="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    
     <link rel="icon" type="image/png" href="img/favicon.png" />
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/mobile.css">
