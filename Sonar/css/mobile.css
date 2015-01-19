@@ -54,9 +54,9 @@ header {
     background-size: cover; }
   header .links {
     display: block;
-    margin-top: 36vh; }
+    margin-top: 20vh; }
     header .links .hover-links li {
-      margin-top: 20px; }
+      margin-top: 10px; }
     header .links .hover-links a:hover {
       text-decoration: line-through; }
   header .links-closed {
@@ -213,3 +213,19 @@ header {
   width: 50%;
   margin-left: 25%;
   margin-top: 30vh; }
+
+@media screen and (max-height: 500px) {
+  .navigation-closed #nav-button-image {
+    display: none; }
+
+  #slide-1 {
+    height: 500px; }
+
+  #slide-2 {
+    height: 500px; }
+
+  .navigation-open #nav-button-image {
+    display: none; }
+
+  .question {
+    display: none; } }

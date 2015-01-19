@@ -49,7 +49,7 @@ function positionSucces(position) {
     var hideDistance = distance(longitude, latitude, destinationLongitude, destinationLatitude)*1000;
     console.log('distance: ' + hideDistance);
 
-    var currentInterval = 1000+(hideDistance/destinationRadius)*2000;
+    var currentInterval = 1000+(hideDistance/destinationRadius)*10000;
 
     console.log('interval: ' + currentInterval);
     timedCount(currentInterval);
