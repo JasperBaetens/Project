@@ -61,8 +61,8 @@ header {
 
     .close {
       background-image: url("../img/navigation.png");
-      height: 35px;
-      width: 50px;
+      height: 55px;
+      width: 60px;
       background-size: cover;
     }
     .open {
@@ -93,7 +93,10 @@ header {
     list-style-type: none;
   }
 }
-
+ #validator{
+        color: red;
+        font-size: 4vw;
+    }
 #slide-1 {
   background-image: url("../img/home480.png");
   background-size: cover;

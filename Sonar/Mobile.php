@@ -71,11 +71,11 @@
      <section id="slide-4">
         <div class="container">
             <form autocomplete="off" action="confirmation.php" method="POST">
-                <p id='validator'></p>
+                
                 <p>I&rsquo;d like to name my sonario <input id="mobile_create_name" type="text" name="name" placeholder="............" required/></p>
                 <p>and</p> 
                 <p>the range from the sonario is <input id="mobile_create_rad" type="text" name="range" placeholder="............" required/> m.</p>
-
+                <p id='validator'></p>
                 
                 <input type="hidden" id='lat-4' name="lat" value='' />
                 <input type="hidden" id='long-4' name="long" value='' /> 

@@ -43,8 +43,8 @@ header {
       top: 20px; }
   header #nav-button .close {
     background-image: url("../img/navigation.png");
-    height: 35px;
-    width: 50px;
+    height: 55px;
+    width: 60px;
     background-size: cover; }
   header #nav-button .open {
     background-image: url("../img/cross.png");
@@ -63,6 +63,10 @@ header {
     display: none; }
   header li {
     list-style-type: none; }
+
+#validator {
+  color: red;
+  font-size: 4vw; }
 
 #slide-1 {
   background-image: url("../img/home480.png");

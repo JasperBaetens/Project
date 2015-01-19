@@ -63,7 +63,7 @@
     </section>
 
     <section id="slide-2">
-        <video width="100%" height="100%" autoplay muted loop>
+        <video id='video' width="100%" autoplay muted loop>
                 <source src="video/1.mp4" type="video/mp4"/>
                 <source src="video/1.webm" type="video/webm" />
             </video>
@@ -72,7 +72,7 @@
     <section id="slide-3">
         <div class="container">
             
-            <p id="validator"></p>
+           
             
             <form autocomplete="off" action="confirmation.php" method="POST" class="form-3">
                 <p>I&rsquo;d like to name my sonario <input type="text" name="name" placeholder="............" required /></p>
@@ -80,12 +80,13 @@
                 <p>and longitude* is <input type="text" id='long' name="long" placeholder="............" required /> </p>
                 <p>The range from the sonario is <input type="text" id='range' name="range" placeholder="............" required /> meters.</p>
                 
+                <p id="validator"></p>
                 <button type="submit" name="foo" id="sonario-btn">
                     <img src="img/sticker-create.png" width="200px;" id="scenario-sticker">
                 </button>
 
             </form>
-            
+             
         
             
             

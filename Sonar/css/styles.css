@@ -10,9 +10,20 @@
 body {
   font-family: 'cour'; }
 
+body::-webkit-scrollbar {
+  width: 1em; }
+
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); }
+
+body::-webkit-scrollbar-thumb {
+  background-color: #186f5c;
+  outline: 1px solid slategrey; }
+
 header {
   font-family: 'beat', 'Georgia', serif;
-  font-size: 8vw;
+  font-size: 5vw;
+  line-height: 1.5;
   color: #4ef4cf; }
   header a:link {
     outline-style: none; }
@@ -38,8 +49,8 @@ header {
       width: 50px; }
   header #nav-button .close {
     background-image: url("../img/navigation.png");
-    height: 35px;
-    width: 50px;
+    height: 75px;
+    width: 80px;
     background-size: cover; }
   header #nav-button .open {
     background-image: url("../img/cross.png");
@@ -57,6 +68,11 @@ header {
   header li {
     list-style-type: none; }
 
+#validator {
+  color: red;
+  font-size: 1vw;
+  text-decoration: underline; }
+
 #slide-1 .bg {
   background-position: center center;
   background-image: url("../img/home.png");
@@ -69,9 +85,9 @@ header {
 #slide-1 .components {
   position: fixed; }
   #slide-1 .components .logo {
-    width: 24vw;
-    margin-left: 38vw;
-    margin-top: 33vh; }
+    width: 32vw;
+    margin-left: 34.5vw;
+    margin-top: 31vh; }
   #slide-1 .components .sticker {
     position: fixed;
     bottom: 90px;
@@ -88,7 +104,6 @@ header {
 #slide-2 {
   position: relative;
   background-position: center center;
-  background: red;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
