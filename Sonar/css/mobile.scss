@@ -38,7 +38,7 @@ header {
     top: 20px;
     right: 20px;
     #nav-button-image {
-      width: 50px;
+      width: 30px;
     }
   }
 
@@ -50,7 +50,7 @@ header {
 
     background-color: rgba(154, 101, 101, 0.95);
     #nav-button-image {
-      width: 50px;
+      width: 30px;
       position: fixed;
       right: 20px;
       top: 20px;
@@ -156,7 +156,7 @@ header {
   .container{
     margin-left: 10vw;
     width: 80vw;
-    padding-top: 33vh;
+    padding-top: 20vh;
   }
   .sonario-name{
     //width: 100%;
@@ -194,7 +194,7 @@ header {
   font-family: 'cour';
   font-size: 24px;
   .about-text{
-    font-size: 24px;
+    font-size: 22px;
   }
     .container{
     padding-top: 1vh;
@@ -255,7 +255,10 @@ header {
 
 
   #myAudio{
-    display: none;
+    display: true;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 20%;
   }
 
   #doTimer{

@@ -29,7 +29,7 @@ header {
     top: 20px;
     right: 20px; }
     header .navigation-closed #nav-button-image {
-      width: 50px; }
+      width: 30px; }
   header .navigation-open {
     z-index: 100;
     position: fixed;
@@ -37,7 +37,7 @@ header {
     height: 100vh;
     background-color: rgba(154, 101, 101, 0.95); }
     header .navigation-open #nav-button-image {
-      width: 50px;
+      width: 30px;
       position: fixed;
       right: 20px;
       top: 20px; }
@@ -116,7 +116,7 @@ header {
   #slide-2 .container {
     margin-left: 10vw;
     width: 80vw;
-    padding-top: 33vh; }
+    padding-top: 20vh; }
   #slide-2 .sonario-name {
     font-size: 16px; }
   #slide-2 #sonario-btn {
@@ -149,7 +149,7 @@ header {
   font-family: 'cour';
   font-size: 24px; }
   #slide-3 .about-text {
-    font-size: 24px; }
+    font-size: 22px; }
   #slide-3 .container {
     padding-top: 1vh;
     padding-left: 10vw;
@@ -196,7 +196,10 @@ header {
     margin-top: 60px; }
 
 #myAudio {
-  display: none; }
+  display: true;
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 20%; }
 
 #doTimer {
   background: url("img/start.png");
