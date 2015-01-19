@@ -13,7 +13,7 @@
 <main>
     <header>
     <div class="navigation-closed" id="navigation">
-        <a href="../Sonar/mobile.php"  id="nav-button">
+        <a href="../Sonar/Mobile.php"  id="nav-button">
             
             <img src="img/back.png" alt="back" id="back">
         </a>
