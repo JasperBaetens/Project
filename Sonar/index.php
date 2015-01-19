@@ -146,27 +146,3 @@
 </body>
 </html>
 
-<?php
-
-
-            $db = new PDO('mysql:host=localhost;dbname=dbsonario;charset=utf8', 'root', '');
-
-            /*$statement = $db->prepare("SELECT lat FROM Sonario WHERE name='myplace' LIMIT 1");
-            $statement->execute();
-            $row = $statement->fetch(); 
-
-            //echo $row['lat'];
-
-            //var_dump($_POST);
-            if(isset($_REQUEST['foo']))
-            {
-                $insert = $db->prepare("INSERT INTO sonario(name, longit, lat, radius) VALUES(:fname, :flongit, :flat, :frad)");
-                $insert->execute(array(
-                    "fname" => $_POST["name"],
-                    "flongit" => $_POST["longit"],
-                    "flat" => $_POST["lat"],
-                    "frad" => $_POST["range"],
-                ));
-            }
-
-            ?>*/
