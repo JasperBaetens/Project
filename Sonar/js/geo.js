@@ -36,7 +36,7 @@ if (typeof(Number.prototype.toRad) === "undefined") {
     var destinationLongitude = document.getElementById('longit').value;
     console.log('destinationLongitude: ' + destinationLongitude);
     var destinationLatitude = document.getElementById('latit').value;
-    console.log('destinationLatitude: ' + destinationlatitude);
+    console.log('destinationLatitude: ' + destinationLatitude);
     var destinationRadius = document.getElementById('rad').value;
     console.log('destinationRadius: ' + destinationRadius);
 
@@ -45,7 +45,7 @@ function positionSucces(position) {
     var longitude = position.coords.longitude;
     console.log('longitude: ' + longitude);
     var latitude = position.coords.latitude;
-    console.log('latitude: ' + longitude);
+    console.log('latitude: ' + latitude);
     var hideDistance = distance(longitude, latitude, destinationLongitude, destinationLatitude)*1000;
     console.log('distance: ' + hideDistance);
 
