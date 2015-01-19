@@ -215,14 +215,19 @@ header {
   margin-top: 30vh; }
 
 @media screen and (max-height: 500px) {
-  .navigation-closed #nav-button-image {
-    display: none; }
-
   #slide-1 {
-    height: 500px; }
+    height: 300px; }
+    #slide-1 .sticker {
+      display: none; }
 
   #slide-2 {
-    height: 500px; }
+    height: 320px; }
+
+  #slide-3 {
+    height: 700px; }
+
+  #slide-4 {
+    height: 700px; }
 
   .navigation-open #nav-button-image {
     display: none; }
