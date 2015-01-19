@@ -7,30 +7,39 @@
 <body>
 <main>
     <section id="slide-1">
-    <img src="img/LOGO.png" alt="Sonario" class="logo">
+    
            <?php
 
             $db = new PDO('mysql:host=localhost;dbname=dbsonario;charset=utf8', 'root', '');
             if(isset($_REQUEST['foo']))
             {
-                $select = $db->prepare("SELECT * FROM Sonario WHERE name='".mysql_escape_string($_POST['name'])."' LIMIT 1");
+                $select = $db->prepare("SELECT * FROM sonario WHERE name='".mysql_escape_string($_POST['name'])."' LIMIT 1");
                 $select->execute();
                 $data = $select->fetch();
-                $lat = $data['lat'];
-                $long = $data['longit'];
-                $radius = $data['radius'];
-                
-                if(isset($data)){
+               if($data){
+                   
+                  echo '<img src="img/LOGO.png" alt="Sonario" class="logo">';
+                   $lat = $data['lat'];
+                   $long = $data['longit'];
+                   $radius = $data['radius'];
+                   
+                   if(isset($data)){
                     echo '<input type="hidden" name="lat" id="latit" value="'.$lat.'">';
                     echo '<input type="hidden" name="longit" id="longit" value="'.$long.'">';
                     echo '<input type="hidden" name="rad" id="rad" value="'.$radius.'">';
                 }
+               }else{
+                   echo '<h1>Whoops, this sonario does not exist!</h1><a href=Mobile.php>Go Back</a>';
+               }
+               
+                
+                
             }
         ?>
 
     <audio id="myAudio" controls autoplay>
         <!-- <source src="Abstract.ogg" type="audio/ogg"> -->
-        <source src="beep.mp3" type="audio/mpeg">
+        <source src="modular.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
 

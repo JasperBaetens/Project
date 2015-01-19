@@ -43,9 +43,9 @@
 <section id="slide-2">
     <div class="container">
         <form autocomplete="off" action="developer.php" method="POST" class="form">
-            <p>Where are we going? 	<input type="text" maxlength="45" name="name" id="sonario" placeholder="" /></p>
+            <p>Where are we going? 	<input type="text" maxlength="45" name="name" id="sonario" placeholder="" required/></p>
             <!--<p class="sonario-name">(Sonario name)</p>-->
-            <button type="submit" name="foo" value="bar" id="sonario-btn">
+            <button type="submit" name="foo" value="bar" id="sonario-btn" >
                 Start
             </button>
         </form>
