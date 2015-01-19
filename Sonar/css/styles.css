@@ -20,6 +20,19 @@ body::-webkit-scrollbar-thumb {
   background-color: #186f5c;
   outline: 1px solid slategrey; }
 
+#taken {
+  z-index: 10;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(../img/home.png);
+  text-align: center; }
+
+#whoops {
+  margin-top: 30vh; }
+
 header {
   font-family: 'beat', 'Georgia', serif;
   font-size: 5vw;

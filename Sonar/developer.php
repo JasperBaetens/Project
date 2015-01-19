@@ -29,19 +29,21 @@
                     echo '<input type="hidden" name="rad" id="rad" value="'.$radius.'">';
                 }
                }else{
-                   echo '<h1>Whoops, this sonario does not exist!</h1><a href=Mobile.php>Go Back</a>';
+                   echo '<div id="non-exist"><h2>Whoops, this sonario does not exist!</h2><a href=Mobile.php>Go Back</a></div>';
                }
                
                 
                 
             }
         ?>
+    <form>
 
     <audio id="myAudio" controls autoplay>
         <!-- <source src="Abstract.ogg" type="audio/ogg"> -->
         <source src="modular.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
+</form>
 
 </section>
 

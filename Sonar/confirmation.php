@@ -95,7 +95,7 @@
             $row = $statement->fetch();
 
             if(isset($row['name'])){
-                echo '<h2>Sorry, this name is already taken!</h2>';
+                echo '<div id="taken"><h2 id="whoops" >Sorry, this name is already taken!</h2></div>';
                 
             }else{
                if(isset($_REQUEST['foo']))
