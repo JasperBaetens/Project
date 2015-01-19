@@ -90,15 +90,16 @@
 
             $db = new PDO('mysql:host=localhost;dbname=dbsonario;charset=utf8', 'root', '');
 
-            /*$statement = $db->prepare("SELECT lat FROM Sonario WHERE name='myplace' LIMIT 1");
+            $statement = $db->prepare("SELECT * FROM sonario WHERE name='".$_POST["name"]."' LIMIT 1");
             $statement->execute();
-            $row = $statement->fetch(); */
+            $row = $statement->fetch();
 
-            //echo $row['lat'];
-
-            //var_dump($_POST);
-            if(isset($_REQUEST['foo']))
-            {
+            if(isset($row['name'])){
+                echo '<h2>Sorry, this name is already taken!</h2>';
+                
+            }else{
+               if(isset($_REQUEST['foo']))
+                {
                 $insert = $db->prepare("INSERT INTO sonario(name, longit, lat, radius) VALUES(:fname, :flongit, :flat, :frad)");
                 $insert->execute(array(
                     "fname" => $_POST["name"],
@@ -106,7 +107,8 @@
                     "flat" => $_POST["lat"],
                     "frad" => $_POST["range"],
                 ));
+                }
             }
-
+            
             ?>
 
