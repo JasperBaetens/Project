@@ -71,9 +71,10 @@
      <section id="slide-4">
         <div class="container">
             <form autocomplete="off" action="confirmation.php" method="POST">
-                <p>I&rsquo;d like to name my sonario <input type="text" name="name" placeholder="............" /></p>
+                <p id='validator'></p>
+                <p>I&rsquo;d like to name my sonario <input id="mobile_create_name" type="text" name="name" placeholder="............" required/></p>
                 <p>and</p> 
-                <p>the range from the sonario is <input type="text" name="range" placeholder="............" /> m.</p>
+                <p>the range from the sonario is <input id="mobile_create_rad" type="text" name="range" placeholder="............" required/> m.</p>
 
                 
                 <input type="hidden" id='lat-4' name="lat" value='' />
@@ -96,6 +97,7 @@
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
 <script src="js/main.js"></script>
 <script src="js/mobile.js"></script>
+<script src="js/validation-mobile.js"></script>
 
 
 </body>
